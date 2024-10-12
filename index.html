@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div id="screen"></div>
+            <div class="line"><hr></div>
+            <div id="row0" class="row">
+                <button class="btn" id="clear" onclick="clearScreen()">C</button>
+                <button class="btn" id="all-clear" onclick="allClear()">AC</button>
+                <button class="btn" id="sqrt" onclick="calculate(event, 'sqrt')">√</button>
+                <button class="btn" id="power" onclick="calculate(event, '^')">^</button>
+            </div>
+
+            <div id="row1" class="row">
+                <button class="btn" id="seven" onclick="calculate(event, '7')">7</button>
+                <button class="btn" id="eight" onclick="calculate(event, '8')">8</button>
+                <button class="btn" id="nine" onclick="calculate(event, '9')">9</button>
+                <button class="btn" id="divide" onclick="calculate(event, '/')">÷</button>
+            </div>
+            <div id="row2" class="row">
+                <button class="btn" id="four" onclick="calculate(event, '4')">4</button>
+                <button class="btn" id="five" onclick="calculate(event, '5')">5</button>
+                <button class="btn" id="six" onclick="calculate(event, '6')">6</button>
+                <button class="btn" id="multiply" onclick="calculate(event, '*')">x</button>
+            </div>
+            <div id="row3" class="row">
+                <button class="btn" id="one" onclick="calculate(event, '1')">1</button>
+                <button class="btn" id="two" onclick="calculate(event, '2')">2</button>
+                <button class="btn" id="three" onclick="calculate(event, '3')">3</button>
+                <button class="btn" id="subtract" onclick="calculate(event, '-')">-</button>
+            </div>
+            <div id="row4" class="row">
+                <button class="btn" id="decimal" onclick="calculate(event, '.')">.</button>
+                <button class="btn" id="zero" onclick="calculate(event, '0')">0</button>
+                <button class="btn" id="equal" onclick="calculate(event, '=')">=</button>
+                <button class="btn" id="add" onclick="calculate(event, '+')">+</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
